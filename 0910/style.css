@@ -1,0 +1,87 @@
+@charset "utf-8";
+/* CSS document */
+
+* {
+  box-sizing: border-box;
+}
+body,
+h1 {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  height: 100px;
+  background: #119ab0;
+}
+h1 {
+  color: #fff;
+  padding: 30px;
+}
+nav {
+  height: 40px;
+  background-color: #262626;
+}
+nav a {
+  color: #fff;
+  padding: 9px 15px 10px;
+  display: inline-block;
+}
+nav a:hover {
+  background-color: rgb(129, 219, 121);
+}
+.content {
+  background-color: #eee;
+  overflow: hidden;
+}
+section,
+aside {
+  height: 300px;
+  padding: 20px;
+  float: left;
+}
+section {
+  background-color: rgb(190, 228, 101);
+  width: 70%;
+}
+aside {
+  background-color: rgb(190, 228, 231);
+  width: 30%;
+}
+footer {
+  background-color: #707070;
+  padding: 10px;
+  text-align: center;
+}
+@media only screen and (min-width: 320px) {
+  header {
+    background-color: yellow;
+  }
+  h1 {
+    font-size: 0.25em;
+  }
+}
+@media only screen and (min-width: 768px) {
+  header {
+    background-color: orange;
+  }
+  h1 {
+    font-size: 0.5em;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  header {
+    background-color: red;
+  }
+  h1 {
+    font-size: 0.75em;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  header {
+    background-color: blue;
+  }
+  h1 {
+    font-size: 1em;
+  }
+}

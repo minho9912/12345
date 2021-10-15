@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sub Page Layout</title>
+    <link rel="stylesheet" href="./Css/style.css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  </head>
+  <body>
+    <div id="wrap">
+      <div id="header">
+        <header>
+          <h1><a href="" title="logo">201840135최민호</a></h1>
+          <nav>
+            <a href="">Menu1</a>
+            <a href="">Menu2</a>
+            <a href="">Menu3</a>
+            <a href="">Menu4</a>
+            <a href="">Menu5</a>
+          </nav>
+        </header>
+      </div>
+      <div class="content">
+        <div class="sub-visual">
+          <dl>
+            <dt class="tit">Menu1</dt>
+            <dd>description</dd>
+          </dl>
+        </div>
+        <section class="sec-cont">
+          <h3 class="tit">Title</h3>
+          <div class="tab">
+            <ul>
+              <li data-id="con1" class="on">tab #1</li>
+              <li data-id="con2">tab #2</li>
+              <li data-id="con3">tab #3</li>
+            </ul>
+            <div id="con1" class="conBox on">
+              <img src="Img/image01.PNG" />
+            </div>
+            <div id="con2" class="conBox">
+              <img src="Img/image02.PNG" />
+            </div>
+            <div id="con3" class="conBox">
+              <img src="Img/image03.PNG" />
+            </div>
+          </div>
+          <div class="cont-wrap">
+            <div class="sub-img">image</div>
+            <dl class="sub-txt-grp">
+              <dt class="tit">Title1</dt>
+              <dd>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras viverra feugiat commodo. Nulla aliquam elit ac finibus
+                pellentesque. Sed gravida consequat convallis. In ac neque urna. Phasellus lectus odio, commodo eget turpis in, venenatis
+                auctor magna.
+              </dd>
+
+              <dt class="tit">Title2</dt>
+              <dd>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras viverra feugiat commodo. Nulla aliquam elit ac finibus
+                pellentesque. Sed gravida consequat convallis. In ac neque urna. Phasellus lectus odio, commodo eget turpis in, venenatis
+                auctor magna.
+              </dd>
+
+              <dt class="tit">Title3</dt>
+              <dd>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras viverra feugiat commodo. Nulla aliquam elit ac finibus
+                pellentesque. Sed gravida consequat convallis. In ac neque urna. Phasellus lectus odio, commodo eget turpis in, venenatis
+                auctor magna.
+              </dd>
+            </dl>
+            <div class="related-cont">
+              <h4>Related Contents</h4>
+              <ul>
+                <li>
+                  <div class="thumb-img">Image</div>
+                  <h5 class="tit">Title</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </li>
+                <li>
+                  <div class="thumb-img">Image</div>
+                  <h5 class="tit">Title</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </li>
+                <li>
+                  <div class="thumb-img">Image</div>
+                  <h5 class="tit">Title</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </li>
+                <li>
+                  <div class="thumb-img">Image</div>
+                  <h5 class="tit">Title</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer>Copyright© Daelim University College. All rights reserved.</footer>
+    </div>
+    <script>
+      $(function () {
+        // tab 메뉴를 클릭하였을 때 동작함
+        $(".tab ul li").click(function () {
+          // 현재 선택되어있던 메뉴들을 초기화함
+          $(".tab ul li").removeClass("on");
+          $(".tab .conBox").removeClass("on");
+
+          // 선택된 메뉴에 on 클래스를 주어 표기함
+          $(this).addClass("on");
+
+          // 선택된 탭의 data 값으로 content box를 선택함
+          $("#" + $(this).data("id")).addClass("on");
+        });
+      });
+    </script>
+  </body>
+</html>

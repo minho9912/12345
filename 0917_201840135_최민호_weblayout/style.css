@@ -1,0 +1,195 @@
+@charset "utf-8";
+/* CSS document */
+
+* {
+  box-sizing: border-box;
+}
+body,
+h1 {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  height: 100px;
+  background: #fff;
+  font-style: 30px;
+}
+h1 {
+  color: #119ab0;
+  padding: 30px;
+  font-style: 1em;
+}
+h1 b{
+  color: darkkhaki;
+}
+nav {
+  text-align: center;
+  background-color: #119ab0;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 30px;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+}
+nav a:hover {
+  background-color: #007b8f;
+}
+.content {
+  padding: 0 20px 30px;
+  background-color: rgb(207, 207, 207);
+  overflow: hidden;
+}
+section,
+aside {
+  float: left;
+}
+section {
+  background-color: rgb(207, 207, 207);
+  width: 70%;
+}
+aside {
+  background-color: rgb(207, 207, 207);
+  width: 30%;
+  padding-left:  20px;
+
+}
+.card {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+}
+.image{
+  width: 100%;
+  background: #999 url() no-repeat center;
+  background-size: cover;
+  text-indent: -999999%;
+  color: transparent;
+  font-size: 0;
+}
+section .card:first-child .image{
+  background-image: url(./image01.jpg);
+}
+section .card:last-child .image{
+  background-image: url(./image02.jpg);
+}
+
+aside .card:nth-child(1) .image{
+  background-image: url(./image03.jpg);
+}
+aside .img-col-3 .image{
+  background-image: url(./image04.jpg);
+  margin-bottom: 10px;
+}
+aside .img-col-3 .image:nth-of-type(1){
+  background-image: url(./image04.jpg);
+}
+aside .img-col-3 .image:nth-of-type(2){
+  background-image: url(./image05.jpg);
+}
+aside .img-col-3 .image:nth-of-type(3){
+  background-image: url(./image06.jpg);
+}
+footer {
+  background-color: #707070;
+  padding: 10px;
+  text-align: center;
+}
+/* @media only screen and (max-width: 320px) {
+  header {
+    background-color: yellow;
+  }
+  h1 {
+    font-size: 0.25em;
+  }
+}
+@media only screen and (max-width: 768px) {
+  header {
+    background-color: orange;
+  }
+  h1 {
+    font-size: 0.5em;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  header {
+    background-color: red;
+  }
+  h1 {
+    font-size: 0.75em;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  header {
+    background-color: blue;
+  }
+  h1 {
+    font-size: 1em;
+  }
+} */
+
+/* @media only screen and (min-width: 320px) {
+  header {
+    background-color: yellow;
+  }
+  h1 {
+    font-size: 0.25em;
+  }
+}
+@media only screen and (min-width: 768px) {
+  header {
+    background-color: orange;
+  }
+  h1 {
+    font-size: 0.5em;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  header {
+    background-color: red;
+  }
+  h1 {
+    font-size: 0.75em;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  header {
+    background-color: blue;
+  }
+  h1 {
+    font-size: 1em;
+  }
+} */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 1280px) {
+
+}
+@media only screen and (min-width: 769px) and (max-width: 1280px) {
+section{
+  width: 60%;
+}
+aside{
+  width: 40%;
+}
+}
+@media only screen and (max-width: 768px) {
+section, aside{
+  width: 100%;
+  padding: 0;
+}
+nav a{
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+h1{
+  font-size: 0.75em;
+}
+}
+@media only screen and (max-width: 320px) {
+
+}

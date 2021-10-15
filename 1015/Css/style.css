@@ -1,0 +1,96 @@
+@charset "utf-8"; /* CSS Document */
+
+body,
+h1,
+h3,
+h4,
+h5,
+dl,
+dd,
+ul {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+.jd-slider {
+  width: 1260px;
+  margin: 50px auto;
+}
+.jd-slider .slide-inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+.jd-slider .slide-inner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  border: 1px solid #888;
+}
+.jd-slider .slide-area > li {
+  width: 25%;
+  border-right: 1px solid #888;
+  border-left: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+.jd-slider .slide-area > li > a {
+  display: block;
+  height: 350px;
+  font-weight: bold;
+  outline: 0;
+  margin: 15px;
+}
+.jd-slider .slide-area > li > a:hover {
+}
+.jd-slider .slide-area > li > a img {
+  height: 260px;
+}
+.jd-slider .controller {
+  margin: 10px 0 0;
+}
+
+.jd-slider .btn {
+  position: absolute;
+  top: 50%;
+  width: 1260px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: #000;
+}
+
+.card-txt-warp {
+  padding: 20px;
+}
+.card-txt-warp div,
+.card-txt-warp dl {
+  display: inline-block;
+}
+.card-txt-warp div {
+  float: left;
+  width: 40px;
+  height: 40px;
+  background: lightskyblue;
+  border-radius: 2px;
+}
+.card-txt-warp dl {
+  margin-left: 25px;
+  width: calc(100% - 65px);
+  font-size: 15px;
+  font-weight: 700;
+}
+.card-txt-warp dt {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.card-txt-warp dd {
+  font-size: 11px;
+  color: #999;
+  margin-top: 3px;
+}
